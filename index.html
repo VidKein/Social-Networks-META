@@ -44,6 +44,7 @@
         console.log(t);
         if(a==1) h='twitter.com/share?url='+h+'&text='+t+'&hashtags=my_hashtag';
         else if(a==2)h='www.facebook.com/share.php?u='+h;
+        else if(a==3)h='www.pinterest.com/pin-builder/?description='+t+'&media='+h+'&redirect_uri='+h+'&method=button';
         else return;
         window.open('http://'+h,'Soc','screenX=100,screenY=100,height=500,width=500,location=no,toolbar=no,directories=no,menubar=no,status=no');
         return false;}
@@ -56,9 +57,8 @@
     <div class="social">
         <a href="#" onclick="return addSoc(1);" title="Twitter">Twitter</a>
         <a href="#" onclick="return addSoc(2);" title="Facebook">Facebook</a>
-        <script type="text/javascript" async defer src="https://assets.pinterest.com/js/pinit.js"></script>
-        <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-custom="true" class="share-link share-link--pintrest" rel="nofollow" target="_blank">Pinterest</a>
+        <a href="#" onclick="return addSoc(3);" title="Pinterest">Pinterest</a>
     </div>
-
+    
 </body>
 </html>
