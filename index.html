@@ -44,7 +44,7 @@
         console.log(t);
         if(a==1) h='twitter.com/share?url='+h+'&text='+t+'&hashtags=my_hashtag';
         else if(a==2)h='www.facebook.com/share.php?u='+h;
-        else if(a==3)h='www.pinterest.com/pin-builder/?description='+t+'&media='+h+'&redirect_uri='+h+'&method=button';
+        else if(a==3)h='www.pinterest.com/pin/create/button/?url=url&media='+h+'&description'+t;
         else return;
         window.open('http://'+h,'Soc','screenX=100,screenY=100,height=500,width=500,location=no,toolbar=no,directories=no,menubar=no,status=no');
         return false;}
@@ -59,6 +59,6 @@
         <a href="#" onclick="return addSoc(2);" title="Facebook">Facebook</a>
         <a href="#" onclick="return addSoc(3);" title="Pinterest">Pinterest</a>
     </div>
-    
+
 </body>
 </html>
