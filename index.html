@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Networks META - Open Graph</title>
+    <title>Photographer Constantin Vidyuschenko</title>
     <!--Full info-https://ogp.me/ -->
     <!--Open Graph property -->
     <meta property="og:type" content="website"><!--тип добавляемого материала - ОСНОВНОЙ / type of added material - BASIC-->
     <meta property="og:site_name" content="Photographer Constantin Vidyuschenko"><!--название сайта - ДОПОЛНИТЕЛЬНЫЙ / site name - ADDITIONAL-->
-    <meta property="og:url" content="http://srv29109.ht-test.ru/index.php?page=gallery&categories=2&photo=8"><!--ссылка на саму веб-страницу, которая добавляется в социальную сеть - ОСНОВНОЙ / link to the web page itself, which is added to the social network - BASIC-->
+    <meta property="og:url" content="http://srv29109.ht-test.ru/index.php?page=gallery&categories=all&photo=3"><!--ссылка на саму веб-страницу, которая добавляется в социальную сеть - ОСНОВНОЙ / link to the web page itself, which is added to the social network - BASIC-->
     <meta property="og:locale" content="en_UA"><!--язык сайта - ДОПОЛНИТЕЛЬНЫЙ / site language - ADDITIONAL-->
     <meta property="og:locale:alternate" content="ru_UA">
     <meta property="og:locale:alternate" content="ua_UA">
@@ -17,12 +17,12 @@
     <!--Open Graph property Twitter-->
     <meta name="twitter:creator" content="@vidyuschenko"><!--ник канала - ОСНОВНОЙ / channel nickname - BASIC-->
     <meta name="twitter:card" content="summary_large_image"><!--тип карточки «summary» - ОСНОВНОЙ / type of card «summary» - BASIC-->
-    <meta property="twitter:image:src" content="http://srv29109.ht-test.ru/img/2/A15,w1200.jpg"><!--ссылка на картинку, которая должна сопровождать материал-->
+    <meta property="twitter:image:src" content="http://srv29109.ht-test.ru/img/2/A_4,w1200.jpg"><!--ссылка на картинку, которая должна сопровождать материал-->
     <!--END Open Graph property Twitter-->
 
     <meta property="og:title" content="Потягушки"><!--название материала - ОСНОВНОЙ / name of material - BASIC-->
     <meta property="og:description" content="Так приятно ранним утром погреться первыми солнечными лучами."><!--описание материала - по желанию / material description -optional-->
-    <meta property="og:image" content="http://srv29109.ht-test.ru/img/2/A15,w1200.jpg"><!--ссылка на картинку, которая должна сопровождать материал - ОСНОВНОЙ / link to a picture that should accompany the material - BASIC-->
+    <meta property="og:image" content="http://srv29109.ht-test.ru/img/2/A_4,w1200.jpg"><!--ссылка на картинку, которая должна сопровождать материал - ОСНОВНОЙ / link to a picture that should accompany the material - BASIC-->
 
     <!--Рекомендации по размеру изображения - https://habr.com/ru/post/278459/ -->
     <meta property="og:image:width" content="800"><!--размеры изображения - ускоряет скраппинг / image sizes - speeds up scraping-->
@@ -30,6 +30,7 @@
 
     <!--Подтверждение сайта на pinterest-->
     <meta name="p:domain_verify" content="195f5691c1a4bbe76f604ec9506c0a4b"/>
+
 </head>
 <body>
     <h1>Social media markup sample - facebook / twitter</h1>
@@ -45,15 +46,15 @@
         console.log(h);
         var t=encodeURIComponent(document.title);//Тайтл документа
         console.log(t);
-        var url = 'http://srv29109.ht-test.ru/img/2/A15,w1200.jpg';//адресс картинки
+        var url = 'http://srv29109.ht-test.ru/img/2/A_4,w1200.jpg';//адресс картинки
         console.log(url);
-        var url_web = 'http://srv29109.ht-test.ru/index.php?page=gallery&categories=2&photo=8';//адресс картинки
+        var url_web = 'http://srv29109.ht-test.ru/index.php?page=gallery&categories=all&photo=3';//адресс картинки
         console.log(url_web);
         if(a==1) h='twitter.com/share?url='+h+'&text='+t+'&hashtags=my_hashtag';
         else if(a==2)h='www.facebook.com/share.php?u='+h;
-        else if(a==3)h='www.pinterest.com/pin-builder/?description='+t+'&media='+url+'&redirect_uri='+url_web+'&url='+url_web+'&method=button';
+        else if(a==3)h='www.pinterest.com/pin-builder/?description='+t+'&media='+url+'&redirect_uri='+h+'&url='+h+'&method=button';
         else return;
-        window.open('http://'+h);
+        window.open('http://'+h,'Soc','screenX=100,screenY=100,height=500,width=500,location=no,toolbar=no,directories=no,menubar=no,status=no');
         return false;}
     </script>
     
